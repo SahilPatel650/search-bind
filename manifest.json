@@ -1,0 +1,7 @@
+{
+  "manifest_version": 3,
+  "name": "Search Bind",
+  "version": "0.1.0",
+  "description": "Press '/' to jump to the search bar.",
+  "permissions": []
+}
