@@ -1,0 +1,13 @@
+body {
+  width: 300px;
+  font-family: sans-serif;
+  padding: 10px;
+}
+.search-item {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.search-item:hover {
+  background: #eee;
+}

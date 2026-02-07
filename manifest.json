@@ -3,7 +3,13 @@
   "name": "Search Bind",
   "version": "0.1.0",
   "description": "Press '/' to jump to the search bar.",
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Search Bind Settings"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
