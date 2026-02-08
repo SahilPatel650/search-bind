@@ -1,5 +1,19 @@
 # OS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# Chrome
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Chrome Extension related
+*.pem
 *.crx
+node_modules/
+dist/
+build/
+.env.local
+.env
