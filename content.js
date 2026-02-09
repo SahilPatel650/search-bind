@@ -86,7 +86,14 @@ function focusSearchBar() {
 
     if (target) {
         target.focus();
-        target.select();
+        // custom-cursor-to-end
+        const len = target.value.length;
+        try {
+            target.setSelectionRange(len, len);
+        } catch (err) {
+            // Some inputs types (like 'email') might throw on setSelectionRange
+            // Fallback is just focus
+        }
         // Scroll into view if needed
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
